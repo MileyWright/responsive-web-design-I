@@ -68,24 +68,41 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.container{
+.body-container{
 	margin:auto;
 	padding: 40px;
-	 
+	
 	}
 	a {
 		color:gray;
 		padding:10px;
 		margin:auto;
 		text-decoration-line: none; 
+		background: white;
 	
+	}
+	.nav-container{
+	background: purple;
+	display:flex;
+	justify-content: center;
+	flex-direction: row;
 	
+
 	}
 	nav {
 		font-size: 20px;
 		text-align: center;
 		font-family: 'Wallpoet';
+		width:100%;
+		background:pink;
+		display: flex;
+	
 	}
+	.logo{
+		background:red;
+		
+	}
+
 	a:hover{
 		color: darkblue;
 		transform: skewY(2deg);
@@ -95,10 +112,10 @@ h1, h2, h3, h4, h5 {
 	
 	.title{
 	font-size: 50px;
-	width:550px;
+	width:420px;
 	display:flex;
 	flex-direction: column;
-	padding:110px;
+	padding:130px 80px 0 0;
 	}
 	h1{
 	font-family: 'Wallpoet', cursive;
@@ -106,8 +123,6 @@ h1, h2, h3, h4, h5 {
 	}
 	.image{
 		padding:20px;
-		
-
 	}
 	
 	.index-button{
@@ -133,28 +148,25 @@ h1, h2, h3, h4, h5 {
 	.firstTwoSections {
 		display:flex;
 		justify-content: center;
-	}
-	.Features{
-		width:400px;
-		padding: 20px;
-	}
-	.About{
-		width:400px;
-		padding: 20px;
+		background: cadetblue;
 	}
 	
-	.Services{
+	.firstTwoSections p{
+		background:white;
+		text-align: start;
+		padding:10px 0;
 		
-		width:300px;
-		padding:20px;
 	}
-	.Product{
-		width:300px;
-		padding:20px;
-	}
-	.Vision{
-		width:300px;
+	.Middle-Content{
+		width:100%;
 		padding: 20px;
+		background: #565353;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.middle-img{
+		width:100%;
 	}
 	.container2{
 		text-align: center;
@@ -178,6 +190,39 @@ h1, h2, h3, h4, h5 {
     
       
 	}
+
+	/*tablet view */
+
+	@media(max-width:800px){
+		.body-container{
+		width:100%;
+		}
+		.nav-container{
+			flex-direction: column-reverse;
+			width:100%;
+		}
+		nav{
+			width:100%;
+			flex-wrap: wrap;
+		}
+		a{
+			padding:5px;
+			
+		}
+		.logo{
+			width:210px;
+			align-self: center;
+			margin:20px;
+		}		
+		.image{
+		display:none;
+		}
+		.title{
+			padding:60px;
+		}
+	
+	}
+
 
 	/*services css*/
 .container-services{
