@@ -78,11 +78,9 @@ h1, h2, h3, h4, h5 {
 		padding:10px;
 		margin:auto;
 		text-decoration-line: none; 
-		background: white;
 	
 	}
 	.nav-container{
-	background: purple;
 	display:flex;
 	justify-content: center;
 	flex-direction: row;
@@ -94,13 +92,8 @@ h1, h2, h3, h4, h5 {
 		text-align: center;
 		font-family: 'Wallpoet';
 		width:100%;
-		background:pink;
 		display: flex;
 	
-	}
-	.logo{
-		background:red;
-		
 	}
 
 	a:hover{
@@ -148,11 +141,9 @@ h1, h2, h3, h4, h5 {
 	.firstTwoSections {
 		display:flex;
 		justify-content: center;
-		background: cadetblue;
 	}
 	
 	.firstTwoSections p{
-		background:white;
 		text-align: start;
 		padding:10px 0;
 		
@@ -160,7 +151,6 @@ h1, h2, h3, h4, h5 {
 	.Middle-Content{
 		width:100%;
 		padding: 20px;
-		background: #565353;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -223,6 +213,24 @@ h1, h2, h3, h4, h5 {
 	
 	}
 
+	/*mobile view*/
+
+	@media(max-width:500px){
+		.body-container{
+			padding:0px;
+		}
+		a{
+			width:700px;
+			border-bottom:1px solid black;
+			padding: 10px;
+		}
+		.container2{
+			padding:20px;
+		}
+		.firstTwoSections{
+			flex-direction: column;
+		}
+	}
 
 	/*services css*/
 .container-services{
