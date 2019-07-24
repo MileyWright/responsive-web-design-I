@@ -266,7 +266,6 @@ border: 2px black solid;
 	cursor: pointer;
 }
 .container3{
-	background:pink;
 	display:flex;
 	padding:20px;
 	width:100%;
@@ -332,7 +331,6 @@ justify-content: center;
 		justify-items: center;
 	}
 	.first-row{
-		background:lightcyan;
 		display:flex;
 		align-content: end;
 	}
@@ -346,18 +344,14 @@ justify-content: center;
 		width: 100%;
 		height: max-content;
 	}
-	.container4{
-		background: lightgray;
-		
-		
-	}
+	
 	.closingSection{
-		background:white;
+	
 		margin:0px;
 		width:50%;
 	}
 	.services-info-img{
-		background:pink;
+		
 		width:50%;
 		height: max-content;
 	}
